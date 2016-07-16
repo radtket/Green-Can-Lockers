@@ -15,11 +15,19 @@
 
 
       $('#my-video-display').prettyEmbed({
-        videoID: '1cwKcvOMq7I',
-        useFitVids: true,
+		videoID: '1cwKcvOMq7I',
+		previewSize: 'hd',              // use either this option...
 
-        playerControls: false,
-        playerInfo: false
+		// Embed controls
+		showInfo: false,
+		showControls: true,
+		loop: false,
+
+		colorScheme: 'dark',
+		showRelated: false,
+
+		useFitVids: true,
+		playerInfo: false
       });
 
     });
