@@ -13,6 +13,11 @@
   width: 1px;
 }
 
+ video {
+            max-width: 100%;
+            height: auto;
+          }
+
 .slogan, .panel--centered, .panel--padded--centered, [class^="btn--"] {
   text-align: center;
 }
