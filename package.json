@@ -1,0 +1,17 @@
+{
+  "name": "greencanlockers.com",
+  "version": "2.0.0",
+  "description": "Client: Jon Winslow - Green Can Lockers",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Taylor Radtke",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-uglify": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-sass": "^1.2.0"
+  }
+}
