@@ -1,22 +1,17 @@
+import $ from "jquery";
+// import "bootstrap";
+import "slick-carousel";
+import fitvids from "fitvids";
 
+$(".test").slick({
+	nextArrow: $(".bbbt"),
+	prevArrow: $(".bnbt"),
+	autoplaySpeed: 5000,
+	autoplay: true,
+	adaptiveHeight: true,
+	dots: true
+});
 
-
-  (function($){
-    $(document).ready(function() {
-
-	$('.test').slick({
-		nextArrow: $(".bbbt"),
-		prevArrow: $(".bnbt"),
-		autoplaySpeed: 5000,
-		autoplay: true,
-		adaptiveHeight: true,
-		dots: true,
-	});
-
-
-     $('#my-video-display').fitVids();
-
-    });
-    
-  })(jQuery);
-
+$(document).ready(() => {
+	fitvids("#my-video-display");
+});

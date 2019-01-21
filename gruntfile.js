@@ -5,9 +5,16 @@ module.exports = function(grunt) {
 		pkg: grunt.file.readJSON('package.json'),
 
 		uglify: {
-			// doesnt need to be called build, we can call it whatever we want 
+			// doesnt need to be called build, we can call it whatever we want
 			build: {
-				src: ['src/js/vendor/jquery.min.js', 'src/js/vendor/jquery.easing.min.js', 'src/js/vendor/bootstrap.min.js', 'src/js/vendor/slick.min.js', 'src/js/vendor/jquery.prettyembed.js', 'src/js/vendor/jquery.fitvids.js', 'src/js/vendor/jquery.waitforimages.js', 'src/js/scripts.js'],
+				src: ['src/js/vendor/jquery.min.js',
+				'src/js/vendor/jquery.easing.min.js',
+				'src/js/vendor/bootstrap.min.js',
+				'src/js/vendor/slick.min.js',
+				'src/js/vendor/jquery.prettyembed.js',
+				'src/js/vendor/jquery.fitvids.js',
+				'src/js/vendor/jquery.waitforimages.js',
+				'src/js/scripts.js'],
 				dest: 'js/script.min.js'
 			},
 
@@ -18,9 +25,16 @@ module.exports = function(grunt) {
 					compress: false,
 					preserveComments: 'all'
 				},
-				src: ['src/js/vendor/jquery.min.js', 'src/js/vendor/jquery.easing.min.js', 'src/js/vendor/bootstrap.min.js', 'src/js/vendor/slick.min.js', 'src/js/vendor/jquery.prettyembed.js', 'src/js/vendor/jquery.fitvids.js', 'src/js/vendor/jquery.waitforimages.js', 'src/js/scripts.js'],
+				src: ['src/js/vendor/jquery.min.js',
+				'src/js/vendor/jquery.easing.min.js',
+				'src/js/vendor/bootstrap.min.js',
+				'src/js/vendor/slick.min.js',
+				'src/js/vendor/jquery.prettyembed.js',
+				'src/js/vendor/jquery.fitvids.js',
+				'src/js/vendor/jquery.waitforimages.js',
+				'src/js/scripts.js'],
 				dest: 'js/script.min.js'
-			}	
+			}
 		},
 
 
@@ -30,7 +44,8 @@ module.exports = function(grunt) {
 				livereload: true,
 			},
 			js: {
-				files: ['src/js/*.js', 'src/js/vendor/*.js'],
+				files: ['src/js/*.js',
+				'src/js/vendor/*.js'],
 				tasks: ['uglify:dev']
 			},
 				css: {
