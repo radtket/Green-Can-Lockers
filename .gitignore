@@ -1,24 +1,19 @@
-# Security
-# ----------------------
-ftp-credentials.js
-.htaccess
+# Dependency directories
+node_modules
+dist
 
-# Packages
-# ----------------------
-/node_modules
-/bower_components
-/dist
+### macOS ###
+*.DS_Store
+.AppleDouble
+.LSOverride
 
-# Log Files
-# ----------------------
-*.log
-.tmp
-*~
-*#
-.DS_Store
-.DS_STORE
-.netbeans
-nbproject
-.idea
-*.lock
-README.md
+### Windows ###
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Windows shortcuts
+*.lnk
