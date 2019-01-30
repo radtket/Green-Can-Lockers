@@ -2,52 +2,52 @@
 @import "slick/slick";
 @import "slick/slick-theme";
 //colors
-$yellow: #ff0;
-$black: #000;
+$yellow: #ffff00;
+$black: #000000;
 $silver: #c0c0c0;
-$color_mercury_approx: #e7e7e7;
-$color_dove_gray_approx: #696f6f;
-$color_go_ben_approx: #748247;
-$color_mine_shaft_approx: #2e2e2e;
-$color_log_cabin_approx: #222;
-$white: #fff;
-$color_masala_approx: #3a3a3a;
-$color_green_kelp_approx: #262f1c;
-$color_cod_gray_approx: #0a0a0a;
-$color_fuscous_gray_approx: #525252;
-$color_chelsea_cucumber_approx: #96a75f;
-$black_7_5: rgba(0, 0, 0, 0.075);
-$color_fern_60_approx: rgba(98, 196, 98, 0.6);
-$color_fountain_blue_approx: #52bab3;
-$color_froly_approx: #e67478;
-$color_coral_approx: #ff784f;
-$color_purple_mountains_majesty_approx: #9279c3;
-$white_70: rgba(255, 255, 255, 0.7);
+$color-mercury: #e7e7e7;
+$color-dove-gray: #696f6f;
+$color-go-ben: #748247;
+$color-mine-shaft: #2e2e2e;
+$color-log-cabin: #222222;
+$white: #ffffff;
+$color-masala: #3a3a3a;
+$color-green-kelp: #262f1c;
+$color-cod-gray: #0a0a0a;
+$color-fuscous-gray: #525252;
+$color-chelsea-cucumber: #96a75f;
+$black-7: rgba(0, 0, 0, 0.075);
+$color-fern-60: rgba(98, 196, 98, 0.6);
+$color-fountain-blue: #52bab3;
+$color-froly: #e67478;
+$color-coral: #ff784f;
+$color-purple-mountains-majesty: #9279c3;
+$white-70: rgba(255, 255, 255, 0.7);
 
 //fonts
-$font_0: sans-serif;
-$font_1: monospace;
-$font_2: Open Sans;
-$font_3: Montserrat;
-$font_4: Helvetica Neue;
-$font_5: Helvetica;
-$font_6: Arial;
+$font-0: sans-serif;
+$font-1: monospace;
+$font-2: Open Sans;
+$font-3: Montserrat;
+$font-4: Helvetica Neue;
+$font-5: Helvetica;
+$font-6: Arial;
 
 //urls
-$url_0: url(../img/LaJollaBg.jpg);
-$url_1: url(../img/black_wood.jpg);
-$url_2: url(../img/ebay.png);
-$url_3: url(http://www.clker.com/cliparts/0/d/3/2/12205452201820142176shokunin_World_Map.svg.hi.png);
-$url_4: url(http://i.imgur.com/Yv19ZHz.jpg);
-$url_5: url(../img/pattern.png);
-$url_6: url(../img/DSC_00655.JPG);
-$url_7: url(img/logo.svg);
+$url-0: url(../img/backgrounds/LaJollaBg.jpg);
+$url-1: url(../img/backgrounds/black_wood.jpg);
+$url-2: url(../img/ebay/ebay-logo.png);
+$url-3: url(http://www.clker.com/cliparts/0/d/3/2/12205452201820142176shokunin_World_Map.svg.hi.png);
+$url-4: url(http://i.imgur.com/Yv19ZHz.jpg);
+$url-5: url(../img/backgrounds/pattern.png);
+$url-6: url(../img/DSC_00655.JPG);
+$url-7: url(img/logo.svg);
 
 //@extend-elements
 //original selectors
 //.headline-primary:after, .headline-secondary:after, .headline-alternative:after, .icn--nav-toggle:before
-%extend_1 {
-	content: '';
+%extend-1 {
+	content: "";
 	display: block;
 	position: absolute;
 }
@@ -65,59 +65,56 @@ $url_7: url(img/logo.svg);
 }
 
 video {
-	max-width: 100%;
-	height: auto;
 	display: inline-block;
+	height: auto;
+	max-width: 100%;
 	vertical-align: baseline;
 }
 
 .slogan {
-	text-align: center;
-	background: $color_mercury_approx;
-	text-transform: uppercase;
+	background: $color-mercury;
 	display: block;
+	text-align: center;
+	text-transform: uppercase;
 
 	.slogan-text {
-		padding: 4em 0;
-		font-family: $font_3, $font_4, $font_5, $font_6, $font_0;
-		color: $color_masala_approx;
+		color: $color-masala;
+		font-family: $font-3, $font-4, $font-5, $font-6, $font-0;
 		letter-spacing: 0.07em;
+		padding: 4em 0;
 	}
 }
 
 .panel--centered {
-	text-align: center;
-	padding-top: 2.10938rem;
 	padding-bottom: 1.40625rem;
+	padding-top: 2.10938rem;
+	text-align: center;
 }
 
 .panel--padded--centered {
-	text-align: center;
-	padding-top: 5.625rem;
 	padding-bottom: 2.39063rem;
+	padding-top: 5.625rem;
+	text-align: center;
 }
 
 [class^="btn--"] {
-	text-align: center;
-	padding: 15px 30px;
 	border: 0;
-
 	border-radius: 0.4em;
 	color: $white;
-	text-transform: uppercase;
-	font-weight: 700;
-	font-family: $font_3, $font_4, $font_5, $font_6, $font_0;
-
-	transition: opacity 0.3s;
-	display: block;
-	text-decoration: none;
-	margin-bottom: 1.60714rem;
-	width: auto;
 	display: inline-block;
+	font-family: $font-3, $font-4, $font-5, $font-6, $font-0;
+	font-weight: 700;
+	margin-bottom: 1.60714rem;
 	margin-right: 1.20536rem;
+	padding: 15px 30px;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: opacity 0.3s;
+	width: auto;
 
 	&:hover {
-		background: $color_chelsea_cucumber_approx;
+		background: $color-chelsea-cucumber;
 	}
 
 	&:active {
@@ -126,101 +123,98 @@ video {
 }
 
 .headline-primary {
-	color: $color_cod_gray_approx;
-	font-size: 2.95313rem;
-	line-height: 1.09524;
-	margin-top: 0;
+	// font-size: 2.95313rem;
+	// line-height: 1.09524;
+	// color: $color-cod-gray;
+	color: $color-mine-shaft;
+	font-family: $font-3, $font-4, $font-5, $font-6, $font-0;
 	font-size: 3.51563rem;
+	font-weight: 300;
+	letter-spacing: 1px;
 	line-height: 1.30952;
 	margin-bottom: 1.3em;
-	font-weight: 300;
-	text-transform: uppercase;
+	margin-top: 0;
 	position: relative;
-	letter-spacing: 1px;
-	font-family: $font_3, $font_4, $font_5, $font_6, $font_0;
-	color: $color_mine_shaft_approx;
 	text-align: center;
+	text-transform: uppercase;
 
-	&:after {
-		@extend %extend_1;
-		width: 7.03125rem;
+	&::after {
+		@extend %extend-1;
+		background: $color-go-ben;
+		border-radius: 0.07031rem;
+		bottom: -0.49219rem;
 		height: 0.28125rem;
 		left: 50%;
-		background: $color_go_ben_approx;
-		bottom: -0.49219rem;
 		margin-left: -3.51563rem;
-
-		border-radius: 0.07031rem;
+		width: 7.03125rem;
 	}
 }
 
 .headline-secondary {
-	color: $color_fuscous_gray_approx;
-	font-weight: 100;
-	font-size: 1.6875rem;
-	font-family: $font_2, $font_0;
+	// font-size: 1.6875rem;
+	// font-weight: 100;
+	// font-family: $font-2, $font-0;
+	color: $color-fuscous-gray;
+	font-family: $font-3, $font-4, $font-5, $font-6, $font-0;
 	font-size: 2.8125rem;
 	font-weight: 300;
+	letter-spacing: 1px;
 	line-height: 1.5em;
 	margin-bottom: 1em;
 	position: relative;
-	text-transform: uppercase;
-	letter-spacing: 1px;
-	font-family: $font_3, $font_4, $font_5, $font_6, $font_0;
 	text-align: center;
+	text-transform: uppercase;
 
-	&:after {
-		@extend %extend_1;
-		width: 7.03125rem;
+	&::after {
+		@extend %extend-1;
+		background: $color-go-ben;
+		border-radius: 0.07031rem;
+		bottom: -0.49219rem;
 		height: 0.28125rem;
 		left: 50%;
-		background: $color_go_ben_approx;
-		bottom: -0.49219rem;
 		margin-left: -3.51563rem;
-
-		border-radius: 0.07031rem;
+		width: 7.03125rem;
 	}
 }
 
 .headline-alternative {
+	font-family: $font-3, $font-4, $font-5, $font-6, $font-0;
 	font-weight: 300;
+	letter-spacing: 1px;
 	line-height: 1.5em;
 	margin-bottom: 1em;
 	position: relative;
-	text-transform: uppercase;
-	letter-spacing: 1px;
-	font-family: $font_3, $font_4, $font_5, $font_6, $font_0;
 	text-align: center;
+	text-transform: uppercase;
 
-	&:after {
-		@extend %extend_1;
-		width: 3.51563rem;
+	&::after {
+		@extend %extend-1;
+		background: $color-go-ben;
+		border-radius: 0.07031rem;
+		bottom: -0.28125rem;
 		height: 0.14063rem;
 		left: 50%;
-		background: $color_go_ben_approx;
-		bottom: -0.28125rem;
 		margin-left: -1.75781rem;
-
-		border-radius: 0.07031rem;
+		width: 3.51563rem;
 	}
 }
 
 .icn--nav-toggle {
-	line-height: 0;
+	border-bottom: solid 3px $color-mine-shaft;
+	border-top: solid 3px $color-mine-shaft;
 	cursor: pointer;
-	width: 25px;
 	height: 17px;
-	border-top: solid 3px $color_mine_shaft_approx;
-	border-bottom: solid 3px $color_mine_shaft_approx;
+	line-height: 0;
 	position: relative;
+	width: 25px;
 
-	&:before {
-		@extend %extend_1;
-		width: 25px;
+	&::before {
+		@extend %extend-1;
+		background: $color-fuscous-gray;
 		height: 3px;
 		left: 50%;
-		background: $color_fuscous_gray_approx;
 		top: 4px;
+		width: 25px;
 	}
 }
 
@@ -237,11 +231,11 @@ video {
 }
 
 .aligner {
-	display: flex;
 	align-items: center;
+	display: flex;
 	justify-content: center;
 
-	&:before {
+	&::before {
 		content: "";
 		display: block;
 		padding-top: 50%;
@@ -259,9 +253,9 @@ video {
 }
 
 html {
-	font-family: $font_0;
-	width: 100%;
+	font-family: $font-0;
 	height: 100%;
+	width: 100%;
 
 	input[type="button"] {
 		cursor: pointer;
@@ -273,9 +267,9 @@ html {
 }
 
 body {
+	height: 100%;
 	margin: 0;
 	width: 100%;
-	height: 100%;
 }
 
 article {
@@ -398,19 +392,19 @@ small {
 }
 
 sub {
+	bottom: -0.25em;
 	font-size: 75%;
 	line-height: 0;
 	position: relative;
 	vertical-align: baseline;
-	bottom: -0.25em;
 }
 
 sup {
 	font-size: 75%;
 	line-height: 0;
 	position: relative;
-	vertical-align: baseline;
 	top: -0.5em;
+	vertical-align: baseline;
 }
 
 img {
@@ -424,47 +418,47 @@ hr {
 }
 
 pre {
-	overflow: auto;
-	font-family: $font_1, $font_1;
+	font-family: $font-1, $font-1;
 	font-size: 1em;
+	overflow: auto;
 }
 
 code {
-	font-family: $font_1, $font_1;
+	font-family: $font-1, $font-1;
 	font-size: 1em;
 }
 
 kbd {
-	font-family: $font_1, $font_1;
+	font-family: $font-1, $font-1;
 	font-size: 1em;
 }
 
 samp {
-	font-family: $font_1, $font_1;
+	font-family: $font-1, $font-1;
 	font-size: 1em;
 }
 
 button {
 	color: inherit;
+	cursor: pointer;
 	font: inherit;
 	margin: 0;
 	overflow: visible;
 	text-transform: none;
-	cursor: pointer;
 }
 
 input {
 	color: inherit;
 	font: inherit;
-	margin: 0;
 	line-height: normal;
+	margin: 0;
 }
 
 optgroup {
 	color: inherit;
 	font: inherit;
-	margin: 0;
 	font-weight: bold;
+	margin: 0;
 }
 
 select {
@@ -481,11 +475,9 @@ textarea {
 	overflow: auto;
 
 	&:focus {
-		border-color: $color_go_ben_approx;
+		border-color: $color-go-ben;
+		box-shadow: inset 0 1px 1px $black-7, 0 0 8px $color-fern-60;
 		outline: 0;
-		outline: thin dotted \9;
-
-		box-shadow: inset 0 1px 1px $black_7_5, 0 0 8px $color_fern_60_approx;
 	}
 }
 
@@ -541,17 +533,11 @@ input[type="search"] {
 	box-sizing: content-box;
 
 	&:focus {
-		border-color: $color_go_ben_approx;
+		border-color: $color-go-ben;
+		box-shadow: inset 0 1px 1px $black-7, 0 0 8px $color-fern-60;
 		outline: 0;
-		outline: thin dotted \9;
-
-		box-shadow: inset 0 1px 1px $black_7_5, 0 0 8px $color_fern_60_approx;
 	}
 }
-
-input[type="search"]::-webkit-search-cancel-button {}
-
-input[type="search"]::-webkit-search-decoration {}
 
 fieldset {
 	border: 1px solid $silver;
@@ -578,16 +564,16 @@ th {
 }
 
 .about {
-	background: $color_mercury_approx;
-	padding-top: 5.27344rem;
+	background: $color-mercury;
 	padding-bottom: 7.03125rem;
+	padding-top: 5.27344rem;
 }
 
 .about__text--paragraph {
+	color: $color-dove-gray;
+	font-family: $font-2, $font-0;
 	font-size: 1.6875rem;
 	line-height: 1.5;
-	color: $color_dove_gray_approx;
-	font-family: $font_2, $font_0;
 	text-indent: 50px;
 }
 
@@ -595,64 +581,62 @@ th {
 	padding: 0;
 
 	p {
-		font-family: $font_2, $font_0;
+		font-family: $font-2, $font-0;
 	}
 }
 
 .boxes__box--1 {
-	background: $color_go_ben_approx;
+	background: $color-go-ben;
+	color: $color-mine-shaft;
 	text-transform: uppercase;
-	color: $color_mine_shaft_approx;
 
 	li {
 		font-size: 1.6875rem;
 	}
 
 	.headline-secondary {
+		color: $color-log-cabin;
 		margin-top: 0;
 		padding-top: 18px;
-		color: $color_log_cabin_approx;
 
-		&:after {
-			background: $color_mercury_approx;
+		&::after {
+			background: $color-mercury;
 		}
 	}
 
 	span p {
-		text-transform: uppercase;
 		text-align: center;
+		text-transform: uppercase;
 	}
 }
 
 .boxes__box--2 {
-	background-image: $url_0;
-	background-repeat: no-repeat;
-	background-position: center top;
-	background-size: cover;
 	background-attachment: fixed;
+	background-image: $url-0;
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-size: cover;
 
 	img {
 		display: block;
 	}
 
 	button {
-		margin: 0.70313rem auto 0 auto;
-		background: $color_go_ben_approx;
-		padding: 15px 30px;
+		background: $color-go-ben;
 		border: 0;
-
 		border-radius: 0.4em;
 		color: $white;
-		text-transform: uppercase;
-		font-weight: 700;
-		font-family: $font_3, $font_4, $font_5, $font_6, $font_0;
-
-		transition: opacity 0.3s;
 		display: block;
+		font-family: $font-3, $font-4, $font-5, $font-6, $font-0;
+		font-weight: 700;
+		margin: 0.70313rem auto 0;
+		padding: 15px 30px;
 		text-decoration: none;
+		text-transform: uppercase;
+		transition: opacity 0.3s;
 
 		&:hover {
-			background: $color_chelsea_cucumber_approx;
+			background: $color-chelsea-cucumber;
 		}
 
 		&:active {
@@ -666,39 +650,39 @@ th {
 }
 
 .boxes__box--3 {
-	background-image: $url_1;
+	background-attachment: fixed;
+	background-image: $url-1;
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-attachment: fixed;
-	text-align: center;
+	color: $color-mercury;
 	overflow: hidden;
-	color: $color_mercury_approx;
+	text-align: center;
 
 	.test {
-		background: $url_2;
-		background-repeat: no-repeat;
+		background: $url-2;
 		background-position: center top;
+		background-repeat: no-repeat;
 		padding-top: 3.51563rem;
 	}
 }
 
 .boxes__box--4 {
-	background: $color_mine_shaft_approx;
+	background: $color-mine-shaft;
 	color: $white;
 	position: relative;
 
-	&:after {
-		content: "";
-		background: $url_3;
-		background-size: 80%;
+	&::after {
+		background: $url-3;
 		background-position: center;
 		background-repeat: no-repeat;
-		opacity: 0.1;
-		top: 0;
-		left: 0;
+		background-size: 80%;
 		bottom: 0;
-		right: 0;
+		content: "";
+		left: 0;
+		opacity: 0.1;
 		position: absolute;
+		right: 0;
+		top: 0;
 		z-index: 0;
 	}
 
@@ -707,12 +691,12 @@ th {
 	}
 
 	p {
-		text-indent: 3.51563rem;
 		font-size: 1.6875rem;
 		line-height: 1.66667;
+		opacity: 1;
+		text-indent: 3.51563rem;
 		text-transform: uppercase;
 		z-index: 5;
-		opacity: 1;
 	}
 
 	.aligner-item {
@@ -721,17 +705,17 @@ th {
 }
 
 .slogan__title--sub {
-	max-width: 75%;
-	margin: 0 auto;
 	line-height: 1.5em;
+	margin: 0 auto;
+	max-width: 75%;
 }
 
 .jon {
-	background: $color_masala_approx;
+	background: $color-masala;
 }
 
 .jon__text {
-	color: $color_mercury_approx;
+	color: $color-mercury;
 
 	.aligner-item {
 		max-width: 90%;
@@ -742,19 +726,18 @@ th {
 	}
 
 	p {
-		text-indent: 3.51563rem;
+		font-family: $font-2, $font-0;
 		font-size: 1.6875rem;
 		line-height: 1.5;
-		font-family: $font_2, $font_0;
 		text-indent: 50px;
 	}
 
 	blockquote {
-		text-indent: 25px;
+		border-left: 0;
+		font-family: $font-2, $font-0;
 		font-size: 1.1em;
 		line-height: 1.5em;
-		font-family: $font_2, $font_0;
-		border-left: 0;
+		text-indent: 25px;
 
 		footer {
 			font-size: 1.5em;
@@ -763,97 +746,92 @@ th {
 }
 
 .jon__text--image {
-	background: $url_4, $color_mine_shaft_approx;
-	background-size: 75%;
+	background: $url-4, $color-mine-shaft;
 	background-position: center;
 	background-repeat: no-repeat;
+	background-size: 75%;
 }
 
 .footer {
-	border-top: 2px solid $color_go_ben_approx;
-	background: $color_mercury_approx;
-	text-align: center;
+	background: $color-mercury;
+	border-top: 2px solid $color-go-ben;
 	padding: 1.5em 0;
+	text-align: center;
 
 	.footer-logo {
+		display: inline-block;
 		max-height: 80px;
 		padding-right: 30px;
-		display: inline-block;
 	}
 
 	.tr-logo {
-		height: 60px;
+		border-left: 2px solid $color-go-ben;
 		display: inline-block;
+		height: 60px;
 		padding-left: 15px;
-		border-left: 2px solid $color_go_ben_approx;
 	}
 }
 
 .icon-shell {
-
+	background: $white;
+	border: 4px solid $color-green-kelp;
 	border-radius: 50%;
 	height: 80px;
-	width: 80px;
-	background: $white;
-	border: 4px solid $color_green_kelp_approx;
-	vertical-align: middle;
 	margin-left: 30px;
+	vertical-align: middle;
+	width: 80px;
 
 	&:hover {
-		background: $color_mercury_approx;
-
+		background: $color-mercury;
 		transition: all 0.3s;
 
 		i {
 			font-size: 40px;
-
 			transition: all 0.3s;
 		}
 	}
 
 	a {
-		color: $color_green_kelp_approx;
+		color: $color-green-kelp;
 	}
 
 	i {
-		line-height: 80px;
 		font-size: 30px;
+		line-height: 80px;
 	}
 }
 
 .panel {
-	padding-top: 2.10938rem;
 	padding-bottom: 1.40625rem;
+	padding-top: 2.10938rem;
 }
 
 .panel--padded {
-	padding-top: 5.625rem;
 	padding-bottom: 2.39063rem;
+	padding-top: 5.625rem;
 }
 
 .contact {
-	font-family: $font_2, $font_0;
+	color: $color-masala;
+	font-family: $font-2, $font-0;
 	font-weight: 400;
-	color: $color_masala_approx;
 	padding-bottom: 3em;
 
 	button {
-		padding: 15px 30px;
+		background: $color-go-ben;
 		border: 0;
-
 		border-radius: 0.4em;
 		color: $white;
-		text-transform: uppercase;
-		font-weight: 700;
-		font-family: $font_3, $font_4, $font_5, $font_6, $font_0;
-
-		transition: opacity 0.3s;
 		display: block;
+		font-family: $font-3, $font-4, $font-5, $font-6, $font-0;
+		font-weight: 700;
+		padding: 15px 30px;
 		text-decoration: none;
-		background: $color_go_ben_approx;
+		text-transform: uppercase;
+		transition: opacity 0.3s;
 
 		&:hover {
-			background: $color_chelsea_cucumber_approx;
+			background: $color-chelsea-cucumber;
 		}
 
 		&:active {
@@ -867,69 +845,69 @@ th {
 }
 
 .bnbt {
-	border: 1px solid $color_mine_shaft_approx;
+	border: 1px solid $color-mine-shaft;
+	border-left: 0;
+	cursor: pointer;
+	left: 0;
 	padding: 15px;
-	width: 50px;
 	position: absolute;
 	top: calc(50% - 38px);
-	cursor: pointer;
+	width: 50px;
 	z-index: 1;
-	left: 0;
-	border-left: none;
 
 	&:hover {
-		background: $white_70;
+		background: $white-70;
 
 		transition: .2s;
 	}
 }
 
 .bbbt {
-	border: 1px solid $color_mine_shaft_approx;
-	padding: 15px;
-	width: 50px;
-	position: absolute;
-	top: calc(50% - 38px);
+	border: 1px solid $color-mine-shaft;
+	border-right: 0;
 	cursor: pointer;
-	z-index: 1;
+	padding: 15px;
+	position: absolute;
 	right: 0;
-	border-right: none;
+	top: calc(50% - 38px);
+	width: 50px;
+	z-index: 1;
 
 	&:hover {
-		background: $white_70;
+		background: $white-70;
 
 		transition: .2s;
 	}
 }
 
 .section-mask {
-	position: absolute;
-	z-index: 2;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background-repeat: repeat;
-	background: $url_5;
+	background: $url-5;
 	background-attachment: fixed;
+	background-repeat: repeat;
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 2;
 }
 
 .main-hero {
-	width: 100%;
-	overflow: hidden;
-	height: 65rem;
-	position: relative;
-	background-image: $url_6;
-	background-size: cover;
+	background-image: $url-6;
 	background-position: center 45%;
+	background-size: cover;
+	height: 65rem;
+	overflow: hidden;
+	position: relative;
+	width: 100%;
 }
 
 .image {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	text-align: center;
 	padding: 0;
+	text-align: center;
 }
 
 .image__section {
@@ -942,74 +920,73 @@ th {
 }
 
 .btn--default {
-	background-color: $color_fountain_blue_approx;
+	background-color: $color-fountain-blue;
 }
 
 .btn--success {
-	background-color: $color_go_ben_approx;
+	background-color: $color-go-ben;
 }
 
 .btn--error {
-	background-color: $color_froly_approx;
+	background-color: $color-froly;
 }
 
 .btn--warning {
-	background-color: $color_coral_approx;
+	background-color: $color-coral;
 }
 
 .btn--info {
-	background-color: $color_purple_mountains_majesty_approx;
+	background-color: $color-purple-mountains-majesty;
 }
 
 .navbar-default {
 	background-color: $white;
-	border-bottom: 5px solid $color_go_ben_approx;
+	border-bottom: 5px solid $color-go-ben;
+	color: $color-log-cabin;
 	min-height: 55px;
 	text-transform: uppercase;
-	color: $color_log_cabin_approx;
 
 	.navbar-nav>.active>a {
 		background: transparent;
 
 		&:hover {
 			background: transparent;
-			color: $color_go_ben_approx;
+			color: $color-go-ben;
 		}
 
 		&:focus {
 			background: transparent;
-			color: $color_go_ben_approx;
+			color: $color-go-ben;
 		}
 
-		&:after {
+		&::after {
+			background: transparent;
+			border-bottom: 2px solid $color-go-ben;
 			content: "";
 			display: block;
-			border-bottom: 2px solid $color_go_ben_approx;
-			background: transparent;
-			width: 80%;
 			margin: 0 auto;
 			position: relative;
 			top: 5px;
+			width: 80%;
 		}
 	}
 
 	.nav li a {
-		color: $color_log_cabin_approx;
-		font-weight: 400;
-		font-family: $font_3, $font_4, $font_5, $font_6, $font_0;
-		letter-spacing: 0.05em;
+		color: $color-log-cabin;
+		font-family: $font-3, $font-4, $font-5, $font-6, $font-0;
 		font-size: 1em;
-
+		font-weight: 400;
+		letter-spacing: 0.05em;
 		transition: all 0.3s;
 
 		&:hover {
+			color: $color-go-ben;
 			outline: 0;
-			color: $color_go_ben_approx;
 		}
 
 		&:focus {
+			color: $color-go-ben;
 			outline: 0;
-			color: $color_go_ben_approx;
 		}
 	}
 }
@@ -1020,41 +997,39 @@ th {
 }
 
 #header__bg {
-	position: absolute;
+	background: $white;
+	border-bottom: 10px solid $color-go-ben;
+	border-radius: 100%;
+	height: 180px;
 	left: 10%;
 	margin-top: -55px;
+	position: absolute;
 	width: 180px;
-	height: 180px;
-	border-bottom: 10px solid $color_go_ben_approx;
-
-	border-radius: 100%;
-	background: $white;
 	z-index: -2;
 }
 
 .header__bg {
-	position: fixed;
 	left: 10%;
-	min-width: 120px;
+	margin-left: 30.5px;
+	max-height: 120px;
 	max-width: 120px;
 	min-height: 120px;
-	max-height: 120px;
-	margin-left: 30.5px;
+	min-width: 120px;
 	padding: 0;
+	position: fixed;
 	text-align: center;
 }
 
 .header__bg--logo {
-	min-width: 105px;
+	max-height: 105px;
 	max-width: 105px;
 	min-height: 105px;
-	max-height: 105px;
+	min-width: 105px;
 }
 
 @media(min-width: 767px) {
 	.navbar {
 		padding: 20px 0;
-
 		transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
 	}
 
@@ -1064,26 +1039,24 @@ th {
 
 	.navbar-default {
 		padding: 25px 0;
-
 		transition: padding 0.3s;
 	}
 }
 
 .site-logo {
-	background-image: $url_7;
+	background-image: $url-7;
 	background-repeat: no-repeat;
-	width: 115px;
-	height: 45px;
 	display: inline-block;
+	height: 45px;
+	width: 115px;
 }
 
 .fa-chevron-down {
-	position: absolute;
 	bottom: 1.875rem;
-	left: 50%;
+	color: $color-go-ben;
 	font-size: 3.25rem;
-	color: $color_go_ben_approx;
-
+	left: 50%;
+	position: absolute;
 	transform: translateX(-50%);
 	z-index: 3;
 }
@@ -1093,138 +1066,108 @@ svg:not(:root) {
 }
 
 h3.footer__slogan {
-	text-transform: uppercase;
-	font-family: $font_3, $font_4, $font_5, $font_6, $font_0;
+	font-family: $font-3, $font-4, $font-5, $font-6, $font-0;
 	font-weight: 400;
+	text-transform: uppercase;
 }
 
 li.tr-section {
-	vertical-align: middle;
-	text-align: left;
+	border-right: 2px solid $color-go-ben;
 	padding-right: 15px;
-	border-right: 2px solid $color_go_ben_approx;
+	text-align: left;
+	vertical-align: middle;
 
 	a {
-		color: $color_go_ben_approx;
+		color: $color-go-ben;
 	}
 }
 
 input[type="text"]:focus {
-	border-color: $color_go_ben_approx;
+	border-color: $color-go-ben;
+	box-shadow: inset 0 1px 1px $black-7, 0 0 8px $color-fern-60;
 	outline: 0;
-	outline: thin dotted \9;
-
-	box-shadow: inset 0 1px 1px $black_7_5, 0 0 8px $color_fern_60_approx;
 }
 
 input[type="password"]:focus {
-	border-color: $color_go_ben_approx;
+	border-color: $color-go-ben;
+	box-shadow: inset 0 1px 1px $black-7, 0 0 8px $color-fern-60;
 	outline: 0;
-	outline: thin dotted \9;
-
-	box-shadow: inset 0 1px 1px $black_7_5, 0 0 8px $color_fern_60_approx;
 }
 
 input[type="datetime"]:focus {
-	border-color: $color_go_ben_approx;
+	border-color: $color-go-ben;
+	box-shadow: inset 0 1px 1px $black-7, 0 0 8px $color-fern-60;
 	outline: 0;
-	outline: thin dotted \9;
-
-	box-shadow: inset 0 1px 1px $black_7_5, 0 0 8px $color_fern_60_approx;
 }
 
 input[type="datetime-local"]:focus {
-	border-color: $color_go_ben_approx;
+	border-color: $color-go-ben;
+	box-shadow: inset 0 1px 1px $black-7, 0 0 8px $color-fern-60;
 	outline: 0;
-	outline: thin dotted \9;
-
-	box-shadow: inset 0 1px 1px $black_7_5, 0 0 8px $color_fern_60_approx;
 }
 
 input[type="date"]:focus {
-	border-color: $color_go_ben_approx;
+	border-color: $color-go-ben;
+	box-shadow: inset 0 1px 1px $black-7, 0 0 8px $color-fern-60;
 	outline: 0;
-	outline: thin dotted \9;
-
-	box-shadow: inset 0 1px 1px $black_7_5, 0 0 8px $color_fern_60_approx;
 }
 
 input[type="month"]:focus {
-	border-color: $color_go_ben_approx;
+	border-color: $color-go-ben;
+	box-shadow: inset 0 1px 1px $black-7, 0 0 8px $color-fern-60;
 	outline: 0;
-	outline: thin dotted \9;
-
-	box-shadow: inset 0 1px 1px $black_7_5, 0 0 8px $color_fern_60_approx;
 }
 
 input[type="time"]:focus {
-	border-color: $color_go_ben_approx;
+	border-color: $color-go-ben;
+	box-shadow: inset 0 1px 1px $black-7, 0 0 8px $color-fern-60;
 	outline: 0;
-	outline: thin dotted \9;
-
-	box-shadow: inset 0 1px 1px $black_7_5, 0 0 8px $color_fern_60_approx;
 }
 
 input[type="week"]:focus {
-	border-color: $color_go_ben_approx;
+	border-color: $color-go-ben;
+	box-shadow: inset 0 1px 1px $black-7, 0 0 8px $color-fern-60;
 	outline: 0;
-	outline: thin dotted \9;
-
-	box-shadow: inset 0 1px 1px $black_7_5, 0 0 8px $color_fern_60_approx;
 }
 
 input[type="number"]:focus {
-	border-color: $color_go_ben_approx;
+	border-color: $color-go-ben;
+	box-shadow: inset 0 1px 1px $black-7, 0 0 8px $color-fern-60;
 	outline: 0;
-	outline: thin dotted \9;
-
-	box-shadow: inset 0 1px 1px $black_7_5, 0 0 8px $color_fern_60_approx;
 }
 
 input[type="email"]:focus {
-	border-color: $color_go_ben_approx;
+	border-color: $color-go-ben;
+	box-shadow: inset 0 1px 1px $black-7, 0 0 8px $color-fern-60;
 	outline: 0;
-	outline: thin dotted \9;
-
-	box-shadow: inset 0 1px 1px $black_7_5, 0 0 8px $color_fern_60_approx;
 }
 
 input[type="url"]:focus {
-	border-color: $color_go_ben_approx;
+	border-color: $color-go-ben;
+	box-shadow: inset 0 1px 1px $black-7, 0 0 8px $color-fern-60;
 	outline: 0;
-	outline: thin dotted \9;
-
-	box-shadow: inset 0 1px 1px $black_7_5, 0 0 8px $color_fern_60_approx;
 }
 
 input[type="tel"]:focus {
-	border-color: $color_go_ben_approx;
+	border-color: $color-go-ben;
+	box-shadow: inset 0 1px 1px $black-7, 0 0 8px $color-fern-60;
 	outline: 0;
-	outline: thin dotted \9;
-
-	box-shadow: inset 0 1px 1px $black_7_5, 0 0 8px $color_fern_60_approx;
 }
 
 input[type="color"]:focus {
-	border-color: $color_go_ben_approx;
+	border-color: $color-go-ben;
+	box-shadow: inset 0 1px 1px $black-7, 0 0 8px $color-fern-60;
 	outline: 0;
-	outline: thin dotted \9;
-
-	box-shadow: inset 0 1px 1px $black_7_5, 0 0 8px $color_fern_60_approx;
 }
 
 .uneditable-input:focus {
-	border-color: $color_go_ben_approx;
+	border-color: $color-go-ben;
+	box-shadow: inset 0 1px 1px $black-7, 0 0 8px $color-fern-60;
 	outline: 0;
-	outline: thin dotted \9;
-
-	box-shadow: inset 0 1px 1px $black_7_5, 0 0 8px $color_fern_60_approx;
 }
 
 .form-control:focus {
-	border-color: $color_go_ben_approx;
+	border-color: $color-go-ben;
+	box-shadow: inset 0 1px 1px $black-7, 0 0 8px $color-fern-60;
 	outline: 0;
-	outline: thin dotted \9;
-
-	box-shadow: inset 0 1px 1px $black_7_5, 0 0 8px $color_fern_60_approx;
 }
