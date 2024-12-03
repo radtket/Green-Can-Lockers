@@ -1,8 +1,11 @@
-# Captain Jon's Green Can Locker's
+**Green Can Lockers Website**
 
-A website for Captain Jon's Green Can Locker's
+A detailed promotional site for Captain Jon’s Green Can Lockers, a custom solution for securing military surplus ammo cans. It includes product details, customer testimonials, and global outreach information. The project emphasizes user-focused design, accessibility, and storytelling to highlight the product’s quality and functionality.
+  
 
-**Live demo:**  [https://radtket.github.io/green-can-lockers/](https://radtket.github.io/green-can-lockers/)
+**GitHub Repository:** [radtket/green-can-lockers](https://github.com/radtket/green-can-lockers)
+
+**Live Demo:** [Green Can Lockers](https://radtket.github.io/green-can-lockers/)
 
 ## Getting started
 
